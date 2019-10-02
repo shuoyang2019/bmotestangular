@@ -1,0 +1,13 @@
+<div>
+    <label>
+        Filter for first name and last name
+    </label>
+    <br>
+    First Name:<input [(ngModel)]="firstNameFilter" (change)="changeFirstName()" placeholder="First Name" />
+    <br>
+    Last Name:<input [(ngModel)]="lastNameFilter" (change)="changeLastName()" placeholder="Last Name" />
+    <br>
+</div>
+<button (click)="reset()">Reset to original list</button>
+<app-person *ngFor="let person of persons" [person]="person">
+</app-person>
