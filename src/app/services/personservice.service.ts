@@ -8,8 +8,7 @@ import { Person } from '../datatypes/person';
   providedIn: 'root'
 })
 export class PersonserviceService {
-  serviceUrl = 'http://localhost:8080/getPersonList';
-
+  serviceUrl = 'http://bmotestbackendapi.us-east-2.elasticbeanstalk.com/getPersonList';
   constructor(private http: HttpClient) { }
 
   private handleError(error) {
